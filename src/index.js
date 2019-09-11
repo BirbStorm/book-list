@@ -10,6 +10,7 @@ import App from './components/App';
 import rootReducer from './reducers';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import "./index.css";
 
 const store = createStore(rootReducer, {}, composeWithDevTools(applyMiddleware()));
 
