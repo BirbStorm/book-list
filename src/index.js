@@ -12,7 +12,9 @@ import rootReducer from './reducers';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import "./index.css";
 
-const store = createStore(rootReducer, {}, composeWithDevTools(applyMiddleware()));
+const compose = composeWithDevTools({trace:true})
+
+const store = createStore(rootReducer, {}, compose(applyMiddleware()));
 
 ReactDOM.render(
     <Provider store={store}>

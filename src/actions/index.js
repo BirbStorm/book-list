@@ -1,3 +1,5 @@
+import {combineActions} from 'redux'
+
 export function selectBook(book){
     return {
         type: 'BOOK_SELECTED',
